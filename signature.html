@@ -6,11 +6,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            font-size: 30px;
+            font-size: 12px;
             color: #333;
         }
         .signature {
             margin-top: 10px;
+            max-width: 500px; /* Ancho máximo de la firma */
+            min-width: 400px; /* Ancho máximo de la firma */
+            max-height: 200px;
         }
         .name {
             margin-top: 5px;
@@ -23,6 +26,7 @@
         .profession {
             margin-top: 5px;
             font-style: italic;
+            font-size: 14.5px;
             margin-bottom: 5px;
         }
         .title {
@@ -35,11 +39,13 @@
         .contact-info {
             margin-top: 10px;
             font-size: 14px;
+            margin-bottom: 5px;
         }
         .social-icons a {
             display: inline-block;
             margin-right: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            vertical-align: middle;
         }
         /* Nueva clase para la línea vertical */
         .separator {
@@ -50,10 +56,11 @@
     </style>
 </head>
 <body>
-    <table width="30%">
+    <table width="30%" table-layout: fixed>
+        
         <tr>
             <td>
-                <img src="FotoPerfil.png" alt="Foto de perfil" width="160" height="160" style="border-radius: 20%;">
+                <img src="file:///C:/Users/g_a_e/Git_proyectos/signature_project/FotoPerfil.png" alt="Foto de perfil" font-size=14px width="150" height="150" style="border-radius: 20%;">
             </td>
             <!-- Nueva columna con la clase "separator" para la línea vertical -->
             <td class="separator"></td>
@@ -63,11 +70,11 @@
                     <p class="profession">Electronic Engineer</p>
                     <p class="title">Electronics Consulting and Business Projects</p>
                     <div class="contact-info">
-                        <p>Wapp: <a href="https://wa.me/573006010145">+57 3006010145</a></p>
+                        <p>Wapp: <a href="https://wa.me/573006010145" style="text-decoration: none;">+57 3006010145</a></p>
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/gustavoaescobar"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-                            <a href="https://www.youtube.com/channel/UCBB1lnX8hO-T0f5Mj-yDsrQ"><img src="youtube-icon.png" alt="YouTube"></a>
-                            <a href="https://github.com/gaescor"><img src="github-icon.png" alt="GitHub"></a>
+                            <a href="https://www.linkedin.com/in/gustavoaescobar"><img src="file:///C:/Users/g_a_e/Git_proyectos/signature_project/linkedin-icon.png" alt="LinkedIn" width="28" height="28"></a>
+                            <a href="https://www.youtube.com/channel/UCBB1lnX8hO-T0f5Mj-yDsrQ"><img src="file:///C:/Users/g_a_e/Git_proyectos/signature_project/youtube-icon.png" alt="YouTube" width="28" height="28"></a>
+                            <a href="https://github.com/gaescor"><img src="file:///C:/Users/g_a_e/Git_proyectos/signature_project/github-icon.png" alt="GitHub" width="28" height="28" color="blue"></a>
                         </div>
                     </div>
                 </div>
